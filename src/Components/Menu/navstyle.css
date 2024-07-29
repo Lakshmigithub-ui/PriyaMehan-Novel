@@ -1,0 +1,70 @@
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px black;
+    background: wheat;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+}
+
+.navbar-left{
+    width: 22px;
+    margin-right: 25px;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px rgb(14, 176, 240);
+    cursor: pointer;
+}
+
+.navbar-middle{
+    display: flex;
+    padding: 16px;
+    gap: 25px;
+    cursor: pointer;
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    gap: 16px;
+    cursor: pointer;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding: 16px;
+    box-shadow: 0 1px 3px -2px rgb(14, 176, 240);
+}
+
+.nav-color{
+    width: 80px;
+    height: 30px;
+    padding-left:9px;
+    outline: none;
+    /* border: 1px solid#2f632f; */
+    color: #f5dfdf;
+    font-size: 20px;
+    font-weight: 400;
+    flex-direction: column;
+    cursor: pointer;
+    background:rgb(219, 230, 243);
+    border-radius: 75px;
+}
+
+.search{
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.navbar-right .search input{
+    background: transparent;
+    width: 400px;
+    border: 0;
+}

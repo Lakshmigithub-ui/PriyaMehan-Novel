@@ -1,0 +1,19 @@
+.tranding-box {
+    background: #5b21b6;
+}
+
+.style{
+    gap: 30px;
+    background-color: aliceblue;
+    padding: 6px;
+    cursor: pointer;
+    color: rgb(255, 72, 0);
+    font-size: large;
+}
+
+/* .bg{
+    background-color: rgb(203, 208, 216);
+} */
+.flex-container{
+    border: 1px solid grey;
+}
