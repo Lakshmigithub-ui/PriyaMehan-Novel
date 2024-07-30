@@ -9,8 +9,6 @@ div.whole-header{
 
 .header{
     display: flex;
-    margin-top: 5px;
-    margin-bottom: -15px;
 }
 
 ul.categories{
