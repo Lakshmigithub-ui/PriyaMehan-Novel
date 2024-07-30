@@ -4,7 +4,7 @@ import "./Footer.css";
 function Footer() {
   return(
   <div>
-    <div className="w-full container-fluid text-white mx-auto flex flex-col items-center bg-blue-800 ">
+    <div className=" container-fluid text-white  flex flex-col items-center bg-blue-800 ">
       <div className="flex flex-col md:flex-row text-center md:text-left md:justify-between py-6 ">
         <a  href="/aboutus" className="uppercase px-3 footer">
           About Us

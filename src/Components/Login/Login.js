@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function Login() {
   return (
-    <div className="flex flex-col rounded w-full md:w-50 p-5 shadow-lg justify-items-center login ">
+    <div className="flex flex-col container-fluid rounded w-full justify-items-center login ">
+      <div className="md:w-50 p-5 shadow-lg "> 
       <h1 className="font-bold mb-4">Login</h1>
       <div className="row">
         <div className="col-md-12 "></div>
@@ -58,14 +59,13 @@ function Login() {
         </div>
       </form>
 
-      <div className=" flex items-center justify-center gap-4 mt-4">
+      <div className="flex items-center justify-center mt-4">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           x="0px"
           y="0px"
-          width="45"
-          height="35"
           viewBox="0 0 48 48"
+          className="w-1/5 md:w-2/5"
         >
           <path
             fill="#FFC107"
@@ -87,14 +87,12 @@ function Login() {
 
         <a className="anchor" href="https://priyamehannovels.com/auth/google">
           <strong>Login with Google</strong>
-        </a>
-        
+        </a>   
 
         <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 24 24"
     fill="currentColor"
-    width="40px"
   >
     <path d="M22 12.1c0-5.5-4.5-10-10-10S2 6.6 2 12.1c0 5.1 3.9 9.3 8.9 9.9v-7h-2.7v-2.8h2.7v-2.1c0-2.7 1.6-4.1 3.9-4.1 1.1 0 2.1.1 2.4.1v2.8h-1.7c-1.3 0-1.6.8-1.6 1.6v1.9h2.7l-.4 2.8h-2.3v7c5-.6 8.9-4.8 8.9-9.9z"/>
   </svg>
@@ -102,6 +100,7 @@ function Login() {
           <strong>Login with Facebook</strong>
         </a>
       </div>
+    </div>
     </div>
   );
 }
