@@ -97,6 +97,7 @@ function Login() {
             width="100"
             height="100"
             viewBox="0 0 48 48"
+            // className="w-1/5 md:w-2/5"
             className="w-12 md:w-23"
 
           >

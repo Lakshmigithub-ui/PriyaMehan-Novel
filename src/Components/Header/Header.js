@@ -40,7 +40,7 @@ function Header() {
   return (
     <div className="whole-header home-header">
       <div className="header">
-        <a href="#home" className="w-1/2 md:w-1/4">
+        <a href="/" className="w-1/2 md:w-1/4">
           <img src={logo1} className="width-full" alt="" />
         </a>
 
