@@ -38,7 +38,7 @@ function Header() {
   }
 
   return (
-    <div className="whole-header">
+    <div className="whole-header home-header">
       <div className="header">
         <a href="#home" className="w-1/2 md:w-1/4">
           <img src={logo1} className="width-full" alt="" />
@@ -55,7 +55,7 @@ function Header() {
 
         <div className="md:hidden mt-2 justify-end absolute top-0 right-0 h-16 w-16 ... ">
           <button
-            className="toggle italic text-sm bg-clip-border p-1 bg-blue-200 border-4 border-blue-300 border-transparent"
+            className="toggle italic text-sm bg-clip-border p-0 bg-blue-200 border-4 border-blue-300 border-transparent"
             onClick={menuClicked}
           >
             <span>MENU</span>

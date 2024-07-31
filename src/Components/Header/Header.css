@@ -1,14 +1,15 @@
-* {
+/* * {
     z-index: 999;
-}
+} */
 
 div.whole-header {
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky;*/
+    position: sticky; 
     top: 0;
     background-color: rgb(222, 242, 248);
     padding: 1px;
     font-size: 20px;
+    z-index: 99;
 }
 
 .header {
@@ -69,8 +70,9 @@ ul {
     .categories {
         width: 80%;
         position: fixed;
-        /* overflow: hidden; */
-        background: rgb(188, 235, 247);
+        overflow: hidden;
+        background: rgb(188, 235, 247);  
+        z-index: 999;    
     }
 
     /* .nav-login {
