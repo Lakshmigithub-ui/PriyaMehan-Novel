@@ -71,15 +71,11 @@ ul {
         z-index: 999;    
     }
 
-    /* .nav-login {
-        margin-right: -30px;
-    } */
 }
 
 @media (min-width: 300px) and (max-width: 768px) {
     .toggle {
-        color: grey;
-        /* float: right; */
+        color: black;
     }
 }
 

@@ -53,12 +53,12 @@ function Header() {
         </div>
       </div>
 
-        <div className="md:hidden mt-2 justify-end absolute top-0 right-0 h-16 w-16 ... ">
+        <div className="md:hidden mt-2 justify-end absolute top-1 right-7 h-16 w-16 ... ">
           <button
-            className="toggle italic text-sm bg-clip-border p-0 bg-blue-200 border-4 border-blue-300 border-transparent"
+            className="toggle grid gap-4 grid-cols-5 italic text-sm bg-clip-border p-1 bg-blue-200 border-4 border-blue-300 border-transparent"
             onClick={menuClicked}
           >
-            <span>MENU</span>
+            
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -73,7 +73,10 @@ function Header() {
                 d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
               />
             </svg>
+            <span className="text-blue-900 text-sm  ">MENU</span>
+
           </button>
+
         </div>
 
         <div className="nav-login">
