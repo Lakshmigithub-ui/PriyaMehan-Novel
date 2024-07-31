@@ -43,7 +43,6 @@ function Authors() {
                         className="authorimage"
                         src={item.profile_images}
                         alt="Media"
-                        // style={{ width: "10%", height: "8%" }}
                       />
                     </div>
                   </div>

@@ -28,10 +28,7 @@ function Post() {
   }, []);
 
   return (
-    <div>
-      {/* <div>
-      <Trending></Trending>
-      </div> */}
+    <div className="w-full md:w-2/3 flex flex-col items-center px-3">
       <h4 className="w-full post-title-name margin">
         <span className="flex align-center text-white p-2 ">தொடர் கதைகள்</span>
       </h4>
