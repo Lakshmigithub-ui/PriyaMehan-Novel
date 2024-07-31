@@ -65,9 +65,10 @@ ul {
 @media (min-width: 300px) and (max-width: 768px) {
     .categories {
         width: 80%;
+        border: 1px solid red;
         position: fixed;
         overflow: hidden;
-        background: rgb(188, 235, 247);  
+        background: rgb(246, 250, 241);  
         z-index: 999;    
     }
 
