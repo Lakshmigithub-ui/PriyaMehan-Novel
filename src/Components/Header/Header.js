@@ -44,8 +44,21 @@ function Header() {
           <img src={logo1} className="width-full" alt="" />
         </a>
 
-        <div className="md:hidden mt-2 justify-end ">
-          <button onClick={menuClicked}>
+        <div className={`md:block justify-end ${open ? "block" : "hidden"}`}>
+          <ul className="categories flex lg:flex-row flex-col">
+            {categories.map((item) => (
+              <li key={item.id}>{item.name}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+        <div className="md:hidden mt-2 justify-end absolute top-0 right-0 h-16 w-16 ... ">
+          <button
+            className="toggle italic text-sm bg-clip-border p-1 bg-blue-200 border-4 border-blue-300 border-transparent"
+            onClick={menuClicked}
+          >
+            <span>MENU</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -63,34 +76,15 @@ function Header() {
           </button>
         </div>
 
-        <div
-          className={`md:block justify-end ${open ? "block" : "hidden"}`}
-        >
-          <ul className="categories">
-            {categories.map((item) => (
-              <li key={item.id}>{item.name}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
+        <div className="nav-login">
+            <Link to="register">
+              <button>Register</button>
+            </Link>
 
-      {/* <div>
-      <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-      </div> */}
-
-      <div className="nav-login">
-        <Link to="register">
-          <button>Register</button>
-        </Link>
-
-        <Link to="login">
-          <button>Login</button>
-        </Link>
-      </div>
+            <Link to="login">
+              <button>Login</button>
+            </Link>
+          </div>
 
       <marquee className="marq1">
         இந்த தளத்தில் எழுத விரும்புவர்கள்

@@ -1,4 +1,8 @@
-div.whole-header{
+* {
+    z-index: 999;
+}
+
+div.whole-header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -7,26 +11,26 @@ div.whole-header{
     font-size: 20px;
 }
 
-.header{
+.header {
     display: flex;
 }
 
-ul.categories{
-    display: flex;
+ul.categories {
+    /* display: flex; */
     padding: 20px;
     margin-top: 30px;
     cursor: pointer;
-    color:black;
+    color: black;
     font-weight: 900;
     font-size: 16px;
     gap: 15px;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-.nav-login button{
+.nav-login button {
     width: 80px;
     height: 40px;
     outline: none;
@@ -39,16 +43,16 @@ ul{
     cursor: pointer;
     /* margin: 0px 4px 0px 6px; */
     /* gap: 20px; */
-    margin-right:50px;
+    margin-right: 8px;
     float: right;
     margin-top: -20px;
 }
 
-.marq1{
+.marq1 {
     margin-top: 10px;
     background-color: rgb(202, 24, 24);
     color: white;
-    font-weight:900;
+    font-weight: 900;
     width: 100%;
     font-size: medium;
     box-sizing: border-box;
@@ -57,7 +61,27 @@ ul{
     overflow: hidden;
 }
 
+/* .menu-login{
+    flex-direction: column;
+} */
 
+@media (min-width: 300px) and (max-width: 768px) {
+    .categories {
+        width: 80%;
+        position: fixed;
+        /* overflow: hidden; */
+        background: rgb(188, 235, 247);
+    }
 
+    /* .nav-login {
+        margin-right: -30px;
+    } */
+}
 
+@media (min-width: 300px) and (max-width: 768px) {
+    .toggle {
+        color: grey;
+        /* float: right; */
+    }
+}
 
