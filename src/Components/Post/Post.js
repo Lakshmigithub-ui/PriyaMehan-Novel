@@ -3,7 +3,6 @@ import axios from "axios";
 import Poststyle from "./Poststyle.css";
 import Authors from "../Authors/Authors";
 import Novels from "../Novels/Novels";
-// import Trending from "./Trending/Trending";
 
 function Post() {
   const [post, setPost] = useState([]);
@@ -40,18 +39,11 @@ function Post() {
         </span>
       </h4>
 
-      {/* <h4 className="sub-title">
-        <span>தொடர் கதைகள்</span>
-      </h4> */}
       <h4 className="w-full post-title-name margin">
         <span className="flex align-center text-white p-2 text-base font-bold ">
           புதிய வரவுகள்
         </span>
       </h4>
-
-      {/* <h4 className="sub-title1">
-        <span>புதிய வரவுகள்</span> <br></br>
-      </h4> */}
 
       <div className="main">
         <div className="post">
@@ -62,7 +54,6 @@ function Post() {
               </div>
               <div className="flex items-center">
               <div>Published on {formatDate(item.created_at)}</div>
-                {/* <div>Published on {item.created_at}</div> */}
                 <svg
                   className="w-6 h-6 text-orange-500"
                   aria-hidden="true"

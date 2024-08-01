@@ -32,7 +32,6 @@ root.render(
       </Routes>
       
       <Footer></Footer>
-
     </Router>
 
 

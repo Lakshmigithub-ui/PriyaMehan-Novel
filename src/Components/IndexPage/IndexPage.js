@@ -12,9 +12,12 @@ function IndexPage() {
       <Trending></Trending>
       <br></br>
 
-      <div className="frontpage">
-        <div className="item1"> <Post></Post></div>
-        <div className="item2 "><Authors></Authors></div>
+      <div className="flex lg:flex-row flex-col ">
+
+      {/* <div className="frontpage "> */}
+        <div className="grow"> <Post></Post></div>
+        <div><Authors></Authors></div>
+      {/* </div> */}
       </div>
 
       {/* <div className="container mx-auto flex flex-wrap py-6 body ">
