@@ -27,6 +27,11 @@ function Post() {
       });
   }, []);
 
+  const formatDate = (dateString) => {
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    return new Intl.DateTimeFormat('en-US', options).format(new Date(dateString));
+  };
+
   return (
     <div className="w-full md:w-2/3 flex flex-col items-center px-3">
       <h4 className="w-full post-title-name margin">
@@ -56,7 +61,8 @@ function Post() {
                 {item.title}
               </div>
               <div className="flex items-center">
-                <div>Published on {item.created_at}</div>
+              <div>Published on {formatDate(item.created_at)}</div>
+                {/* <div>Published on {item.created_at}</div> */}
                 <svg
                   className="w-6 h-6 text-orange-500"
                   aria-hidden="true"
