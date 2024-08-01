@@ -45,7 +45,7 @@ function Login() {
               // href="https://priyamehannovels.com/forget-password"
               className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500"
             >
-              Forgot password?
+              <Link to="/forget-password">Forgot password?</Link>
             </a>
 
             <div className="col-md-12  w-full flex p-0 justify-between items-center">
@@ -99,7 +99,6 @@ function Login() {
             viewBox="0 0 48 48"
             // className="w-1/5 md:w-2/5"
             className="w-12 md:w-23"
-
           >
             <path
               fill="#039be5"

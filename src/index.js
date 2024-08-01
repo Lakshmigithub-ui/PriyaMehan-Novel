@@ -16,7 +16,7 @@ import { Container, Button, Alert } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./Components/Footer/Footer";
 import Register from "./Components/Register/Register";
-// import Forget_Password from "./Components/Forget_Password/Forget_Password";
+import Forget_Password from "./Components/Forget_Password/Forget_Password";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -28,12 +28,13 @@ root.render(
         <Route exact path="/" element={<IndexPage />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="forget-password" element={<Forget_Password />} />
       </Routes>
       
       <Footer></Footer>
-      {/* <Forget_Password></Forget_Password> */}
 
     </Router>
+
 
     {/* <IndexPage></IndexPage> */}
 
